@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VerticalTableViewCell : UITableViewCell
+@interface VerticalTableViewCell : UITableViewCell<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *horizontalTableView;
 - (void)buildHorizontalTableView;
